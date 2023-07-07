@@ -7,27 +7,68 @@
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <style>
+    /* p.hamlet{
+        background-color: yellow;
+    } */
+    #play span{
+      /* background-color: aquamarine; */
+    }
+  </style>
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>Leave A Light On</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
-     
+    
+     <div id="collect">
+      <h2>Story Summarized</h2>
+     <p> The story of one man’s search for meaning in life and his encounter with a pair of bumbling, not-so-bright church custodians.  The pair are comparable to ‘Dumb & Dumber’,  but they take the job of caring for the house of the Lord very seriously, as well as the task of  “leaving the light on” for the lost who may pass by .</p>
+    </div>
    <main class="wrapper">
-    <p>Content goes here</p>
+    <div id="play">
+      <p><span data-actor="Kristy">Kristy: I’m so excited, Emily!  I feel like I know him already, you’ve told me so much about him. </span></p>
+      <p><span data-actor="Marie">Marie: And we finally get to meet him - the man you’re going to marry! (sighs and some giggles from all the girls)</span></p>
+      <p><span data-actor="Emliy">Emliy: You’ll just love him - I know you will.  He’s...   he’s...  wonderful.</span></p>
+      <p><span data-actor="Marie">Marie: From everything you’ve said, he sounds perfect...  (pause)  almost TOO perfect.  Are you sure there’s not some major hidden flaw that you just don’t know about yet?</span></p>
+      <p><span data-actor="Kristy">Kristy: Ah yes, old girlfriends names and numbers in a little black book? </span></p>
+      <p><span data-actor="Marie">Marie: Or maybe he’s a mama’s boy?</span></p>
+      <p><span data-actor="Emliy">Emliy: No, no, he’s- </span></p>
+      <p><span data-actor="Kristy">Kristy: I know.  You’ll find out on your wedding night that the man has a fixation with Pokemon figurines.  He probably has all 100 of them in his collection.
+      </span></p>
+      <p><span data-actor="Marie">Marie: And he has to kiss each one of them individually every night before he can go to sleep in his pajamas with feet in them!</span></p>
+      <p><span data-actor="Emliy">Emliy: Stop it!  You’re not very funny.  Dan is everything I’ve always wanted and none of those things that you said.  He’s handsome and smart and mature and sweet and so... focused.  He told me that he has known since he was a little boy what he  would be when he grew up.</span></p>
+      <p><span data-actor="Kristy">Kristy: Yeah?  So what does he see in you? </span></p>
+      <p><span data-actor="Emliy">Emliy: Would you guys knock it off?  You’re supposed to be my best friends, but you are making me think that I will regret even introducing you to Dan.</span></p>
+      <p><span data-actor="Kristy">Kristy: OK, Emme, we’ll stop.  We’re just teasing you.  And maybe we’re just a teensy bit jealous.  But I am very happy for you.</span></p>
+      <p><span data-actor="Marie">Marie:  Me too,  I’m happy for you.  And I can’t wait to meet him! (hugs and little squeals)</span></p>
+      <p>To be continued...</p>
+    </div>
+    <h4>You can finish the script in the page provided below. <a href="https://www.dramatix.org.nz/scripts/christmas-mainmenu-37/724-leave-a-light-on">Open here</a></h4>
+  </main>
+    <div id="collect">
+      <h3>How this page works</h3>
+      <p>The webpage is a provide a script for "Leave A Light On" story.The webpage includes various elements such as a header with a title and a navigation menu. The main content consists of a summarized version of the story and a dialogue between characters. The dialogue portrays a conversation between three friends discussing the protagonist's upcoming marriage. They playfully speculate about potential flaws or quirks in the groom-to-be, highlighting their camaraderie and teasing nature. The dialogue ends with a hint that the story is to be continued.
+      Additionally, the webpage incorporates a JavaScript page called "DOM Play." This script enhances the user's interaction with the page. By clicking on specific lines spoken by an actor, the app highlights those lines by changing their background color to orange. Simultaneously, lines spoken by other actors revert to their original white background color. This dynamic highlighting feature adds an engaging element to the storytelling experience.
+      In more detailed way:-<br>
+       - The highlight(el) function is defined, which toggles the background color of the clicked element between white and orange.<br>
+       - The highlightActor(actor) function is defined, which receives the name of an actor as an argument. <br> 
+       - The spans variable is assigned all the "span" elements within the element with the id "play".<br>
+       - A loop is set up to iterate over each span element.
+    </p>
+    </div>
      <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+      <p><small>&copy; 2023 by 
+          Danait Gebremedhin, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
-  </main>
   <script src="js/main.js"></script>
+  <script src="js/dom-play.js"></script>
  </body>
 </html>

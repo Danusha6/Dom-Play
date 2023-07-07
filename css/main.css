@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 html {
-    background-color: lightgray;
+    background-color: rgb(239, 236, 236);
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
@@ -13,7 +13,10 @@ html {
     color: #000; 
     background: #ff0;
 }
-
+#collect{
+    width:960px;
+    margin: 0 auto
+}
 h1 {
     font-weight: normal;
     margin: auto;
